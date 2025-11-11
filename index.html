@@ -5,7 +5,18 @@
     <link rel="icon" type="image/svg+xml" href="/MySPA/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>myspa</title>
-    <script type="module" crossorigin src="/MySPA/assets/index-BkV4kfx2.js"></script>
+    <script defer src='https://portalstage.catchpoint.com/jp/106010/latest/InitialLoadScript.js'></script>
+
+<!-- The following code changes the beacon from unload/beforeunload to pageHide -->
+ <script language="javascript" type="text/javascript">
+if (window.RProfiler) {
+    window.RProfiler.usePageHide();
+} else {
+    window.addEventListener('GlimpseLoaded', () => window.RProfiler.usePageHide());
+}
+</script>
+
+    <script type="module" crossorigin src="/MySPA/assets/index-DsDIzimQ.js"></script>
   </head>
   <body>
     <div id="root"></div>
