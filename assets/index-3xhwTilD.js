@@ -28,7 +28,7 @@ Please change the parent <Route path="${G}"> to <Route path="${G==="/"?"*":`${G}
             }
 
             // Queue some events before the "real library" is loaded
-            cpRumTag('excludeBenchMarks');
+            //cpRumTag('excludeBenchMarks');
             cpRumTag('usePageHide', false);
             cpRumTag('variation', 'SPA');
             cpRumTag('pageGroup', 'yuiiw');
