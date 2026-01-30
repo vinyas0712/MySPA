@@ -22,7 +22,7 @@ function PageTwo() {
     
 
     
-  
+  //fix 
             // Queue some events before the "real library" is loaded
             
             cpRumTag('usePageHide', false);
