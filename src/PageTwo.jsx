@@ -18,23 +18,19 @@ function PageTwo() {
             function cpRumTag() {
               window.CPRUMDataLayer.push(arguments);
             }
-            <script>
-    window.CPRUMDataLayer = window.CPRUMDataLayer || [];
+    
+    
 
-    function cpRumTag() {
-      window.CPRUMDataLayer.push(arguments);
-    }
-
-    cpRumTag('benchmarkLog', true);
-  </script>
+    
+  
             // Queue some events before the "real library" is loaded
-            cpRumTag('excludeBenchMarks');
+            
             cpRumTag('usePageHide', false);
             cpRumTag('variation', 'SPA');
             cpRumTag('pageGroup', 'yuiiw');
             cpRumTag('conversion', 20, 1200);
             cpRumTag('appError', 10, 'undefined error');
-            
+            cpRumTag('benchmarkLog', true);
           `}
         </script>
       </Helmet>
