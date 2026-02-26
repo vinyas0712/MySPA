@@ -31,6 +31,7 @@ function PageTwo() {
             cpRumTag('conversion', 20, 1200);
             cpRumTag('appError', 10, 'undefined error');
             cpRumTag('benchmarkLog', true);
+            cpRumTag('consentv2', { analytics_storage: 'denied' })
           `}
         </script>
       </Helmet>
